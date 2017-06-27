@@ -10,16 +10,18 @@ const menu = [
   'Contacto'
 ]
 
+let key = 0
+
 export default () => (
   <div className='content'>
     <ul>
       {
         menu.map((item) => (
-          <li>{item}</li>
+          <li key={key++}>{item.toUpperCase()}</li>
         ))
       }
     </ul>
-    <style>{`
+    <style jsx>{`
         .content {
           margin-top: 55px;
           text-align: center;
@@ -34,6 +36,11 @@ export default () => (
           display: inline-block;
           padding-right: 20px;
           padding-left: 20px;
+          transition: font-size .1s ease-in-out;
+        }
+
+        .content li:hover {
+          font-size: 18px;
         }
     `}</style>
   </div>
