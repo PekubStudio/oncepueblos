@@ -31,5 +31,5 @@ exports.default = function () {
       fileName: _jsxFileName,
       lineNumber: 4
     }
-  }, 'Go back')));
+  }, 'Go back!s')));
 };
