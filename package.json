@@ -1,0 +1,39 @@
+{
+  "name": "oncepueblos",
+  "version": "0.1.0",
+  "description": "Sitio web gastronomico",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run lint && next",
+    "build": "npm run lint && next build",
+    "start": "next start",
+    "lint": "standard",
+    "test": "npm run lint && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PekubStudio/oncepueblos.git"
+  },
+  "keywords": [
+    "valle",
+    "restaurant",
+    "gastronomico",
+    "react",
+    "nextjs"
+  ],
+  "author": "Pekub Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PekubStudio/oncepueblos/issues"
+  },
+  "homepage": "https://github.com/PekubStudio/oncepueblos#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "next": "beta",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
