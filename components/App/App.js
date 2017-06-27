@@ -53,21 +53,9 @@ const App = (props) => (
         `}
       </style>
     </Head>
-    <div className='content'>
+    <div>
       {props.children}
     </div>
-    <style>{`
-      .content {
-        flex: 1;
-        position: absolute;
-        top: 69px;
-        width: 100%;
-        bottom: 0;
-        padding-bottom: 56px;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
-    `}</style>
   </div>
 )
 
