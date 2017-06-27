@@ -25,14 +25,12 @@ const SmallImage = () => (
           height: 388px;
           display: block;
           width: 292px;
-        }
-        .wrapper {
           animation-name: cf3FadeInOut;
           animation-timing-function: ease-in-out;
           animation-iteration-count: infinite;
           animation-duration: 5s;
           animation-direction: alternate;
-          opacity: 0;
+          opacity: 1;
           position: absolute;
         }
         .img {
