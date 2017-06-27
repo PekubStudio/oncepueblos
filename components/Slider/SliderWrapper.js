@@ -1,15 +1,28 @@
 import React, { Component } from 'react'
 import {Col, Container, Row} from 'react-grid-system'
 import FullImage from './FullImage'
+import SmallImage from './SmallImage'
+import MediumImage from './MediumImage'
 
 export default class SliderWrapper extends Component {
   constructor () {
     super()
     this.state = {
-      flag: false
+      flag: 0
     }
   }
+
+  imgSelector (selector) {
+     return (
+       <div>
+         <FullImage />
+         <SmallImage />
+       </div>
+     )
+  }
+
   render () {
+    let flag = this.state.flag
     return (
       <div>
         <Container>
@@ -17,7 +30,7 @@ export default class SliderWrapper extends Component {
             <Col xs={12} sm={12} md={12} lg={12}>
               <div className='wrapper'>
                 <div className='slider-container' >
-                  <FullImage />
+                  {this.imgSelector(flag)}
                 </div>
               </div>
             </Col>
