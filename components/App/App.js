@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Logo from '../Logo'
 
 const App = (props) => (
   <div>
@@ -54,6 +55,7 @@ const App = (props) => (
       </style>
     </Head>
     <div>
+      <Logo />
       {props.children}
     </div>
   </div>

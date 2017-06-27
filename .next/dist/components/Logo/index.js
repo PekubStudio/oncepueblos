@@ -17,14 +17,10 @@ exports.default = function () {
       fileName: _jsxFileName,
       lineNumber: 2
     }
-  }, _react2.default.createElement('img', { id: 'logo', src: '/static/logo-once-pueblos.png', __source: {
+  }, _react2.default.createElement('style', {
+    __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     }
-  }), _react2.default.createElement('style', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    }
-  }, '\n      .logo-banner {\n        width: 100%;\n        height: 100px;\n        margin: 0px;\n        display: flex;\n        align-items: center;\n      }\n\n      #logo {\n        position:fixed;\n        left: 50%;\n        vertical-align: middle;\n      }\n    '));
+  }, '\n      .logo-banner {\n        background-image: url(/static/logo-once-pueblos.png);\n        width: 260px;\n        display: block;\n        background-position: center;\n        background-repeat: no-repeat;\n        margin: 20px auto;\n        height: 110px;\n    '));
 };
