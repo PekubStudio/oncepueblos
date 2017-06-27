@@ -1,7 +1,21 @@
-//  import { Col, Row } from 'react-grid-system'
+import Nav from '../Nav'
+import Divider from 'react-md/lib/Dividers'
+import Social from '../Social'
+
 const home = () => (
   <div>
-    hi
+    <Nav />
+    <div className='divider'>
+      <Divider />
+      <Social />
+    </div>
+    <style>{`
+      .divider {
+        width:50%;
+        margin: auto;
+        padding-top: 50px;
+      }
+    `}</style>
   </div>
 )
 
