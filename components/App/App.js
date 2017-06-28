@@ -30,12 +30,10 @@ const App = (props) => (
         }
         body{
           background-color: white;
-          width: 100%;
+          min-height: 100%;
           height: 100%;
           margin: 0;
-          top: 0;
-          overflow-x: hidden;
-          overflow-y: hidden;
+          padding: 0;
           background-color: white;
           font-family: 'Montserrat', sans-serif;
         }
@@ -43,9 +41,8 @@ const App = (props) => (
           height: 100%;
           width: 100%;
           margin: 0;
-          top: 0;
+          padding: 0
           box-sizing: border-box;
-          overflow-y: hidden;
           font-family: 'Montserrat', sans-serif;
         }
         #__next {
@@ -54,9 +51,17 @@ const App = (props) => (
         `}
       </style>
     </Head>
-    <div>
+    <div className='page'>
       <Logo />
       {props.children}
+      <style jsx>
+        {`
+          .page {
+            height: 100%;
+            min-height: 100%;
+          }
+        `}
+      </style>
     </div>
   </div>
 )

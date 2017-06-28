@@ -26,6 +26,7 @@ export default class Nav extends Component {
         </ul>
         <style jsx>{`
             .content {
+              position: relative;
               margin-top: 55px;
               text-align: center;
             }

@@ -1,53 +1,49 @@
 import React, { Component } from 'react'
-import {Col, Container, Row} from 'react-grid-system'
 import FullImage from './FullImage'
 import SmallImage from './SmallImage'
 import MediumImage from './MediumImage'
+// import Delay from 'react-delay'
+import ReactInterval from 'react-interval'
 
 export default class SliderWrapper extends Component {
-  constructor () {
-    super()
-    this.state = {
-      flag: 0
+  getIndex (tipo) {
+    if (tipo === 'full') {
+      return <FullImage />
+    } else if (tipo === 'left-small') {
+      return <SmallImage />
+    } else {
+      return <MediumImage />
     }
   }
 
-  imgSelector (selector) {
-     return (
-       <div>
-         <FullImage />
-         <SmallImage />
-       </div>
-     )
+  print (tipo) {
+    console.log(tipo)
   }
 
   render () {
-    let flag = this.state.flag
+    let arreglo = [
+      'full',
+      'left-small',
+      2
+    ]
     return (
-      <div>
-        <Container>
-          <Row>
-            <Col xs={12} sm={12} md={12} lg={12}>
-              <div className='wrapper'>
-                <div className='slider-container' >
-                  {this.imgSelector(flag)}
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+      <div className='main-wrapper'>
+        {
+          arreglo.map((tipo) => (
+            this.getIndex(tipo)
+          ))
+        }
         <style jsx>
           {`
-            .wrapper {
-              margin-top: 100px;
+            .main-wrapper {
+              border: 2px solid black;
               max-width: 875px;
               margin-left: auto;
               margin-right: auto;
-
-            }
-            .slider-container {
-              width: 100%;
-              height: auto;
+              display: block;
+              height: 620px;
+              max-height: 388px;
+              position: relative;
             }
           `}
         </style>

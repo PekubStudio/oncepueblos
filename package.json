@@ -34,9 +34,12 @@
   "dependencies": {
     "next": "beta",
     "react": "^15.6.1",
+    "react-delay": "0.0.4",
     "react-dom": "^15.6.1",
     "react-grid-system": "^2.9.2",
     "react-icons": "^2.2.5",
-    "react-md": "^1.1.0-alpha-5"
+    "react-interval": "^2.0.1",
+    "react-md": "^1.1.0-alpha-5",
+    "react-timeout": "^1.0.1"
   }
 }

@@ -1,4 +1,16 @@
 import SliderWrapper from './SliderWrapper'
 export default () => (
-  <SliderWrapper />
+  <div className='content'>
+    <SliderWrapper className='slider-wrapper' />
+    <style jsx>
+      {`
+        .content {
+          position: relative;
+        }
+        .slider-wrapper {
+          display: block;
+        }
+    `}
+    </style>
+  </div>
 )
