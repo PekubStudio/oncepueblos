@@ -1,10 +1,13 @@
-
+import Slider from '../Slider'
 const home = () => (
   <div>
+    <Slider />
     <style jsx>{`
       .slider {
-        width:50%;
-        margin: auto;
+        width: 100%;
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
         padding-top: 50px;
         position: relative;
       }

@@ -1,23 +1,24 @@
-import { Row, Col } from 'react-grid-system'
+import { Row, Col, Container } from 'react-grid-system'
 
 const Info = ({ title, content, imgUrl }) => (
-  <div class='info'>
-    <Row>
-      <Col md={4}>
-        <div className='paragraph' id='scroll'>
-          <h2>{title}</h2>
-          {content}
-        </div>
-      </Col>
-      <Col md={8}>
-        <img src={imgUrl} />
-      </Col>
-    </Row>
+  <div className='info'>
+    <Container>
+      <Row style={{marginLeft: 'auto', marginRight: 'auto', display: 'block'}}>
+        <Col lg={1} />
+        <Col md={5} lg={4} style={{marginLeft: 40}}>
+          <div className='paragraph' id='scroll'>
+            <h2>{title}</h2>
+            {content}
+          </div>
+        </Col>
+        <Col md={7} lg={7}>
+          <img src={imgUrl} />
+        </Col>
+      </Row>
+    </Container>
     <style jsx>{`
       .info {
-        left:50px;
         display: block;
-
       }
       h2 {
         font-family: Lustria;

@@ -67,9 +67,10 @@ const App = (props) => (
       <style jsx>
         {`
           .content {
-            margin: auto;
-            width: 50%;
-            padding: 10px
+            margin-left: auto;
+            margin-right: auto;
+            display:  block
+            width: 100%;
           }
           .divider {
             width:50%;
