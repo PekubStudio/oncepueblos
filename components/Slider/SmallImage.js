@@ -47,7 +47,7 @@ export default class SmallImage extends Component {
                 position: absolute;
                 max-width: 292px;
                 top: 0;
-                left: 0;
+                right: 0;
 
               }
             `}

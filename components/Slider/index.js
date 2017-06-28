@@ -4,9 +4,6 @@ export default () => (
     <SliderWrapper className='slider-wrapper' />
     <style jsx>
       {`
-        .content {
-          position: relative;
-        }
         .slider-wrapper {
           display: block;
         }

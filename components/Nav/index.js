@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 export default class Nav extends Component {
   render () {
@@ -20,7 +21,7 @@ export default class Nav extends Component {
         <ul>
           {
             menu.map((item) => (
-              <li key={key++}>{item.toUpperCase()}</li>
+              <Link href={'/about-us'}><li key={key++}>{item.toUpperCase()}</li></Link>
             ))
           }
         </ul>
@@ -29,6 +30,8 @@ export default class Nav extends Component {
               position: relative;
               margin-top: 55px;
               text-align: center;
+              top: 0;
+              left: 0;
             }
 
             .content ul {

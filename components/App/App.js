@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Logo from '../Logo'
-
+import Nav from '../Nav'
+import Divider from 'react-md/lib/Dividers'
+import Social from '../Social'
 const App = (props) => (
   <div>
     <Head>
@@ -54,9 +56,27 @@ const App = (props) => (
     </Head>
     <div className='page'>
       <Logo />
-      {props.children}
+      <div className='content'>
+        {props.children}
+      </div>
+      <Nav />
+      <div className='divider'>
+        <Divider />
+        <Social />
+      </div>
       <style jsx>
         {`
+          .content {
+            margin: auto;
+            width: 50%;
+            padding: 10px
+          }
+          .divider {
+            width:50%;
+            margin: auto;
+            padding-top: 50px;
+            position: relative;
+          }
           .page {
             height: 100%;
             min-height: 100%;
