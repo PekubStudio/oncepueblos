@@ -3,7 +3,6 @@ import FullImage from './FullImage'
 import SmallImage from './SmallImage'
 import MediumImage from './MediumImage'
 // import Delay from 'react-delay'
-import ReactInterval from 'react-interval'
 
 export default class SliderWrapper extends Component {
   getIndex (tipo) {
