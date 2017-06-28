@@ -11,7 +11,8 @@ const App = (props) => (
       <meta name='apple-mobile-web-app-capable' content='yes' />
       <meta name='apple-mobile-web-app-status-bar-style' content='blue' />
       <meta name='theme-color' content='white' />
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' />
+      <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' />
       <link rel='manifest' href='/static/manifest.json' />
       <link rel='stylesheet' href='https://unpkg.com/leaflet@1.0.3/dist/leaflet.css' />
       <style>
@@ -35,7 +36,7 @@ const App = (props) => (
           margin: 0;
           padding: 0;
           background-color: white;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'Lato', sans-serif;
         }
         html {
           height: 100%;
@@ -43,7 +44,7 @@ const App = (props) => (
           margin: 0;
           padding: 0
           box-sizing: border-box;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'Lato', sans-serif;
         }
         #__next {
           height: 100%;

@@ -36,6 +36,7 @@ export default class Nav extends Component {
             }
 
             .content li {
+              font-family: Lustria;
               list-style: none;
               display: inline-block;
               padding-right: 20px;
