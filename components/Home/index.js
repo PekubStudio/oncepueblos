@@ -1,10 +1,12 @@
 import Nav from '../Nav'
 import Divider from 'react-md/lib/Dividers'
 import Social from '../Social'
+import Slider from '../Slider'
 
 const home = () => (
   <div>
     <Nav />
+    <Slider />
     <div className='divider'>
       <Divider />
       <Social />
