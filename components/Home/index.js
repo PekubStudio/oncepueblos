@@ -1,8 +1,6 @@
-import Slider from '../Slider'
 
 const home = () => (
   <div>
-    <Slider />
     <style jsx>{`
       .slider {
         width:50%;
