@@ -8,7 +8,8 @@
     "build": "npm run lint && next build",
     "start": "next start",
     "lint": "standard",
-    "test": "npm run lint && ava"
+    "test": "npm run lint && ava",
+    "export": "next build && next export"
   },
   "repository": {
     "type": "git",
