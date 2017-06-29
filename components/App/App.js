@@ -6,7 +6,8 @@ import Social from '../Social'
 const App = (props) => (
   <div>
     <Head>
-      <meta name='viewport' content='initial-scale=1.0, width=device-width maximum-scale=1.0, user-scalable=no' />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width maximum-scale=1.0' />
+      <title>Once Pueblos</title>
       <link rel='apple-touch-startup-image' href='/static/icon-512x512.png' />
       <link rel='apple-touch-icon' href='/static/icon-384x384' />
       <meta name='apple-mobile-web-app-title' content='HCB' />
@@ -15,7 +16,7 @@ const App = (props) => (
       <meta name='theme-color' content='white' />
       <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' />
       <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' />
-      <link rel='manifest' href='/static/manifest.json' />
+      <link rel='manifest' href='https://pekubstudio.github.io/oncepueblos/static/manifest.json' />
       <link rel='stylesheet' href='https://unpkg.com/leaflet@1.0.3/dist/leaflet.css' />
       <style>
         {`.leaflet-container {

@@ -21,7 +21,7 @@ export default class Nav extends Component {
         <ul>
           {
             menu.map((item) => (
-              <Link href={'/about-us'}><li key={key++}>{item.toUpperCase()}</li></Link>
+              <li key={key++}><Link href='/about-us'><a>{item.toUpperCase()}</a></Link></li>
             ))
           }
         </ul>
@@ -36,6 +36,11 @@ export default class Nav extends Component {
 
             .content ul {
               display: block;
+            }
+
+            .content a {
+              text-decoration: none;
+              color: black;
             }
 
             .content li {
