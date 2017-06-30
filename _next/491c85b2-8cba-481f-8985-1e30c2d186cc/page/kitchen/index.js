@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/kitchen', function() {
+            var comp = module.exports=webpackJsonp([7],{359:function(e,a,t){e.exports=t(360)},360:function(e,a,t){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(a,"__esModule",{value:!0});var n=t(0),c=o(n),i=t(34),l=o(i),s=t(61),d=o(s);a.default=function(){return c.default.createElement(l.default,null,c.default.createElement(d.default,{title:"Cocina",content:"Once Pueblos es una cocina de raíces michoacanas y personalidad mexicana,  donde se fusiona la frescura  de los ingredientes de Baja California cocinándolos con técnicas ancestrales utilizadas  desde antaño producto de la tradición y de la experiencia de cocineras mexicanas. Dentro de los diversos  platillos que usted podrá degustar, se encuentra la Torre de Uchepo (tamal de elote blanco)  con Costilla de cerdo, acompañada de salsa de tomatillo con chile puya, crema de rancho y queso Cotija, platillo de tradición Michoacana, que transporta a este cálido lugar y cautiva  los paladares de sus visitantes.",imgUrl:"https://pekubstudio.github.io/oncepueblos/static/kitchen-image.jpg"}))}}},[359]);
+            return { page: comp.default }
+          })
+        

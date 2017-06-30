@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/chef', function() {
+            var comp = module.exports=webpackJsonp([8],{304:function(e,a,i){e.exports=i(305)},305:function(e,a,i){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(a,"__esModule",{value:!0});var n=i(0),t=o(n),c=i(34),r=o(c),u=i(61),l=o(u);a.default=function(){return t.default.createElement(r.default,null,t.default.createElement(l.default,{title:"Cocina",content:"Michoacana de nacimiento, nuestra chef siempre  apasionada de sus raíces culinarias,  plasma  en su cocina con ingredientes cultivados en nuestro huerto los platillos que cambian conforme al cultivo del temporal. Egresada de Culinary Art School con Maestría en Cocinas de México inicio  su carrera en la Ciudad de Guadalajara, Jalisco, posteriormente y desde el año 2013 inició su propio proyecto como Chef y propietaria del restaurante de cocina mexicana “La Mestiza” en la ciudad de Tijuana, Baja California. Además de dirigir su propio negocio, participa en el programa de televisión Cuarto para las Cuatro con una cápsula de cocina donde su objetivo es continuar con la difusión de la cocina tradicional mexicana.",imgUrl:"https://pekubstudio.github.io/oncepueblos/static/chef.jpg"}))}}},[304]);
+            return { page: comp.default }
+          })
+        
