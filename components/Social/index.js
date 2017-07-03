@@ -16,6 +16,7 @@ export default () => (
           margin-top: 45px;
           text-align: center;
           padding-bottom: 60px;
+          -webkit-padding-start: 0px;
         }
 
         .content ul {

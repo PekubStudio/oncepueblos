@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-export default class Nav extends Component {
+export default class mobileNav extends Component {
   render () {
     const menu = [
       'Nosotros',
-      '|',
       'Menu & Historias',
-      '|',
       'Vino',
-      '|',
       'Eventos',
-      '|',
       'Contacto'
     ]
 
@@ -50,11 +46,7 @@ export default class Nav extends Component {
               padding-right: 10px;
               padding-left: 10px;
               transition: font-size .1s ease-in-out;
-            }
-            @media screen and (max-width: 768px) and (min-width: 300px) {
-                .content li {
-                    display: block
-                }
+              display: block
             }
         `}</style>
       </div>

@@ -27,7 +27,7 @@ export default class SliderWrapper extends Component {
     var zIndex = [0, 1, 2, 3, 4, 5]
     var time = [0, 3500, 5500, 7500, 9500, 11500]
     return (
-      <div className='main-wrapper'>
+      <div className='main-wrapper' id='prueba'>
         {
           zIndex.map((counter) => (
             this.main(url, type, zIndex, counter, time)
@@ -44,6 +44,26 @@ export default class SliderWrapper extends Component {
               height: 620px;
               max-height: 388px;
               position: relative;
+            }
+            @media screen and (max-width: 768px) and (min-width: 600px) {
+                .main-wrapper {
+                    max-height: 340px;
+                }
+            }
+            @media screen and (max-width: 600px) and (min-width: 500px) {
+                .main-wrapper {
+                    max-height: 270px;
+                }
+            }
+            @media screen and (max-width: 500px) and (min-width: 400px) {
+                .main-wrapper {
+                    max-height: 220px;
+                }
+            }
+            @media screen and (max-width: 400px) and (min-width: 200px) {
+                .main-wrapper {
+                    max-height: 180px;
+                }
             }
           `}
         </style>
