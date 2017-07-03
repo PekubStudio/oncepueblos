@@ -31,7 +31,9 @@ export default class SmallImage extends Component {
             <style jsx>
               {`
                 .img-container {
-                  height: 388px;
+                  height: 100%;
+                  max-height: 388px:
+                  max-width: 292px;
                   display: block;
                   width: 100%;
                 }
@@ -41,7 +43,7 @@ export default class SmallImage extends Component {
                 }
                 .wrapper {
                   position: absolute;
-                  max-width: 292px;
+                  max-width: 875px;
                   top: 0;
                   left: 0;
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Transition from 'react-motion-ui-pack'
 import {spring} from 'react-motion'
 import Delay from 'react-delay'
+import { Row, Col } from 'react-grid-system'
+
 export default class MediumImage extends Component {
   render () {
     var zIndex = this.props.zindex
@@ -9,9 +11,9 @@ export default class MediumImage extends Component {
     var delay = this.props.delay
     var type = this.props.type
     if (type === 'left-medium') {
-      var left = 0
+      var right = '33%'
     } else {
-      left = '66.6%'
+      right = '0%'
     }
     return (
       <Delay wait={delay}>
@@ -24,24 +26,30 @@ export default class MediumImage extends Component {
             opacity: 0
           }}
           >
-          <div className='wrapper' style={{zIndex: zIndex, left: left}}>
-            <div className='img-container' >
-              <img className='img' src={url} alt='Medium Image' />
-            </div>
+          <div className='wrapper' style={{zIndex: zIndex, marginRight: right}}>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12}>
+                <div className='img-container' >
+                  <img className='img' src={url} alt='Medium Image' />
+                </div>
+              </Col>
+            </Row>
             <style jsx>
               {`
                 .img-container {
-                  height: 388px;
+                  height: 100%;
+                  max-height: 388px;
+                  max-width: 583px;
                   display: block;
                   width: 100%;
                 }
                 .img {
                   width: 100%;
-                  height: 100%;
+                  height: auto;
                 }
                 .wrapper {
                   position: absolute
-                  max-width: 583px;
+                  max-width: 875px
                   top:0;
                   right:0;
                 }

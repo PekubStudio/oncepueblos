@@ -39,6 +39,7 @@ export default class SliderWrapper extends Component {
               max-width: 875px;
               margin-left: auto;
               margin-right: auto;
+              width: 100%;
               display: block;
               height: 620px;
               max-height: 388px;

@@ -13,8 +13,9 @@ export default () => (
     </ul>
     <style jsx>{`
         .content {
-          margin-top: 55px;
+          margin-top: 45px;
           text-align: center;
+          padding-bottom: 60px;
         }
 
         .content ul {

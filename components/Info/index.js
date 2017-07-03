@@ -2,36 +2,46 @@ import { Row, Col, Container } from 'react-grid-system'
 
 const Info = ({ title, content, imgUrl }) => (
   <div className='info'>
-    <Container>
-      <Row style={{marginLeft: 'auto', marginRight: 'auto', display: 'block'}}>
-        <Col lg={1} />
-        <Col md={5} lg={4} style={{marginLeft: 40}}>
-          <div className='paragraph' id='scroll'>
-            <h2>{title}</h2>
-            {content}
-          </div>
-        </Col>
-        <Col md={7} lg={7}>
-          <img src={imgUrl} />
-        </Col>
-      </Row>
-    </Container>
+    <Row className='row'style={{marginLeft: 'auto',marginRight: 'auto', display: 'block'}}>
+      <Col md={5} lg={4} style={{marginLeft: 40}}>
+        <div className='paragraph' id='scroll'>
+          <h2>{title}</h2>
+          {content}
+        </div>
+      </Col>
+      <Col md={7} lg={8}>
+        <img src={imgUrl} />
+      </Col>
+    </Row>
     <style jsx>{`
       .info {
         display: block;
+        max-width: 875px;
+        margin-left: auto;
+        margin-right: auto;
       }
       h2 {
         font-family: Lustria;
         margin:0;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
       img {
-        width: 580px;
-        height: 404px;
+        width: 100%;
+        max-width: 568px;
+        height: 388px;
       }
       .paragraph {
         height: 404px;
         overflow-y: scroll;
         padding-right:10px;
+        color: #636363;
+        font-size: 15px;
+        line-height: 1.65em;
+        letter-spacing: .6px;
+        max-height: 388px;
+        font-family: Lato;
       }
       #scroll::-webkit-scrollbar {
         width: 2px;

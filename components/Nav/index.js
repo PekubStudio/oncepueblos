@@ -36,6 +36,7 @@ export default class Nav extends Component {
 
             .content ul {
               display: block;
+              -webkit-padding-start: 0;
             }
 
             .content a {
@@ -47,13 +48,9 @@ export default class Nav extends Component {
               font-family: Lustria;
               list-style: none;
               display: inline-block;
-              padding-right: 20px;
-              padding-left: 20px;
+              padding-right: 10px;
+              padding-left: 10px;
               transition: font-size .1s ease-in-out;
-            }
-
-            .content li:hover {
-              font-size: 18px;
             }
         `}</style>
       </div>

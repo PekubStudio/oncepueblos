@@ -6,7 +6,7 @@ import Social from '../Social'
 const App = (props) => (
   <div>
     <Head>
-      <meta name='viewport' content='initial-scale=1.0, width=device-width maximum-scale=1.0' />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <title>Once Pueblos</title>
       <link rel='apple-touch-startup-image' href='/static/icon-512x512.png' />
       <link rel='apple-touch-icon' href='/static/icon-384x384' />
@@ -76,7 +76,7 @@ const App = (props) => (
           .divider {
             width:50%;
             margin: auto;
-            padding-top: 50px;
+            padding-top: 30px;
             position: relative;
           }
           .page {
