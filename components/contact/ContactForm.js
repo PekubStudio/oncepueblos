@@ -1,68 +1,78 @@
 import React from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import TextField from 'material-ui/TextField'
-import {Container} from 'react-grid-system'
+import {Container, Col, Row} from 'react-grid-system'
 import RaisedButton from 'material-ui/RaisedButton'
 
 const ContactForm = () => (
   <div className='wrapper'>
-    <div className='text-container'>
-      <h2 className='text'>Contactanos</h2>
-    </div>
     <Container className='contactForm'>
-      <MuiThemeProvider>
-        <div>
-          <TextField
-            hintText={<span className='label'>Nombre</span>}
-            fullWidth
-          /><br />
-          <TextField
-            hintText={<span className='label'>Correo</span>}
-            fullWidth
-          /><br />
-          <TextField
-            hintText={<span className='label'>Telefono</span>}
-            fullWidth
-          /><br />
-          <TextField
-            hintText={<span className='label'>Mensaje</span>}
-            fullWidth
-            multiLine
-            rows={2}
-        /><br />
-          <div className='button-form'>
-            <RaisedButton
-              label={<span style={{color: 'white'}}>Send</span>}
-              labelPosition='before'
-              primary={false}
-              backgroundColor='#2d517b'
-              style={{marginLeft: 'auto', marginRight: 'auto', display: 'block', width: 300, marginTop: 20, marginBottom: 20}}
-          />
-          </div>
-        </div>
-      </MuiThemeProvider>
-      <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6764.532793955342!2d-116.64006800000001!3d32.03498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9551f0a71d3ef5ea!2sOnce+Pueblos!5e0!3m2!1ses-419!2smx!4v1499128547005' width='100%' height='450' frameborder='0' allowfullscreen />
+      <Row>
+        <Col xs={12} sm={12} md={6} lg={6}>
+          <MuiThemeProvider>
+            <div>
+              <div className='text-container'>
+                <h2 className='text'>Contáctanos</h2>
+              </div>
+              <TextField
+                hintText={<span className='label'>Nombre</span>}
+                fullWidth
+              /><br />
+              <TextField
+                hintText={<span className='label'>Correo</span>}
+                fullWidth
+              /><br />
+              <TextField
+                hintText={<span className='label'>Telefono</span>}
+                fullWidth
+              /><br />
+              <TextField
+                hintText={<span className='label'>Mensaje</span>}
+                fullWidth
+                multiLine
+                rows={2}
+            /><br />
+              <div className='button-form'>
+                <RaisedButton
+                  label={<span style={{color: 'white'}}>Enviar</span>}
+                  labelPosition='before'
+                  primary={false}
+                  backgroundColor='black'
+                  style={{width: 180, marginTop: 20, marginBottom: 20}}
+              />
+              </div>
+            </div>
+          </MuiThemeProvider>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6} style={{padding: 0}}>
+        </Col>
+      </Row>
     </Container>
     <style jsx>
       {`
         .wrapper{
-          padding-top: 15px;
-        }
-
-        .text{
-          text-align: center;
-          color: #2d517b;
-          font-size: 16px;
+          max-width: 875px;
           margin-left: auto;
           margin-right: auto;
           display: block;
-          font-family: 'Montserrat', sans-serif;
+          background-color: #fbfaf8;
+          max-height: 388px;
+        }
+
+        .text{
+          text-align: left;
+          color: black;
+          font-size: 27px;
+          font-family: Lustria !important;
+          font-weight: 400;
+          text-transform: uppercase;
         }
 
         .label {
-          color: #2d517b !important;
+          color: black !important;
           background-image: none !important;
-          font-family: 'Montserrat', sans-serif;
+          font-family: Lustria !important;
+          font-size: 14px !important;
         }
 
         .img-container {
@@ -84,9 +94,7 @@ const ContactForm = () => (
         }
 
         .text-container {
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
+          left: 0;
         }
 
         .button-form {

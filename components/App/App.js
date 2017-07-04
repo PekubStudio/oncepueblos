@@ -42,7 +42,6 @@ const App = (props) => (
           margin: 0;
           padding: 0;
           background-color: white;
-          font-family: 'Lato', sans-serif;
         }
         html {
           height: 100%;
@@ -50,7 +49,6 @@ const App = (props) => (
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-          font-family: 'Lato', sans-serif;
         }
         #__next {
           height: 100%;

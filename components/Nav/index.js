@@ -31,6 +31,7 @@ export default class Nav extends Component {
             .content {
               position: relative;
               text-align: center;
+              margin-top: 45px;
               top: 0;
               left: 0;
             }
