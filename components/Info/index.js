@@ -10,7 +10,9 @@ const Info = ({ title, content, imgUrl }) => (
         </div>
       </Col>
       <Col md={7} lg={8}>
-        <img src={imgUrl} />
+        <div className='img-container'>
+          <img src={imgUrl} />
+        </div>
       </Col>
     </Row>
     <style jsx>
@@ -28,10 +30,22 @@ const Info = ({ title, content, imgUrl }) => (
           text-transform: uppercase;
           letter-spacing: 2px;
         }
-        img {
-          width: 100%;
+        .img-container {
           max-width: 568px;
           height: 388px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .img-container {
+                margin-top: 30px;
+                height: auto;
+            }
         }
         .paragraph {
           height: 404px;

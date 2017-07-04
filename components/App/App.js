@@ -4,7 +4,7 @@ import Nav from '../Nav'
 import Divider from 'react-md/lib/Dividers'
 import Social from '../Social'
 import {Visible} from 'react-grid-system'
-import MobileNav from '../Nav/MobileNav'
+import MobileNav from '../Nav/mobileNav'
 
 const App = (props) => (
   <div>
