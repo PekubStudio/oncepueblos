@@ -45,6 +45,7 @@ const ContactForm = () => (
           </MuiThemeProvider>
         </Col>
         <Col xs={12} sm={12} md={6} lg={6} style={{padding: 0}}>
+          <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6764.532793955342!2d-116.64006800000001!3d32.03498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9551f0a71d3ef5ea!2sOnce+Pueblos!5e0!3m2!1ses-419!2smx!4v1499128547005' width='100%' height='388' frameborder='0' allowfullscreen style={{border: 0}} />
         </Col>
       </Row>
     </Container>
