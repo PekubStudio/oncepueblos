@@ -45,9 +45,19 @@ export default class SliderWrapper extends Component {
               max-height: 388px;
               position: relative;
             }
-            @media screen and (max-width: 768px) and (min-width: 600px) {
+            @media screen and (min-width: 830px) {
+                .main-wrapper {
+                    max-height: 413px;
+                }
+            }
+            @media screen and (max-width: 768px) and (min-width: 700px) {
                 .main-wrapper {
                     max-height: 340px;
+                }
+            }
+            @media screen and (max-width: 700px) and (min-width: 600px) {
+                .main-wrapper {
+                    max-height: 320px;
                 }
             }
             @media screen and (max-width: 600px) and (min-width: 500px) {
@@ -60,9 +70,14 @@ export default class SliderWrapper extends Component {
                     max-height: 220px;
                 }
             }
-            @media screen and (max-width: 400px) and (min-width: 200px) {
+            @media screen and (max-width: 400px) and (min-width: 300px) {
                 .main-wrapper {
-                    max-height: 180px;
+                    max-height: 200px;
+                }
+            }
+            @media screen and (max-width: 300px) and (min-width: 200px) {
+                .main-wrapper {
+                    max-height: 170px;
                 }
             }
           `}

@@ -38,7 +38,7 @@ const Info = ({ title, content, imgUrl }) => (
           overflow-y: scroll;
           padding-right:10px;
           color: #636363;
-          font-size: 15px;
+          font-size: 14px;
           line-height: 1.65em;
           letter-spacing: .6px;
           max-height: 388px;

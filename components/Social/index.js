@@ -13,7 +13,7 @@ export default () => (
     </ul>
     <style jsx>{`
         .content {
-          margin-top: 45px;
+          margin-top: 20px;
           text-align: center;
           padding-bottom: 60px;
           -webkit-padding-start: 0px;
@@ -25,6 +25,7 @@ export default () => (
 
         .content li {
           list-style: none;
+          font-size: larger;
           display: inline-block;
           padding-right: 20px;
           padding-left: 20px;

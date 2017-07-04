@@ -1,9 +1,12 @@
 import App from '../components/App/App'
 import Info from '../components/Info'
 
-const content = 'Occupy offal neutra, fanny pack ethical aute twee magna austin in copper mug. Woke yr cillum unicorn dolore organic esse pop-up vinyl scenester disrupt cred echo park dolor. Hot chicken next level deep v af. Deserunt cloud bread et, pop-up vaporware eu sartorial palo santo vape keytar chicharrones hell of tote bag tumblr aute. Gentrify plaid vinyl pour-over, nisi jean shorts before they sold out scenester kitsch everyday carry swag sriracha in. YOLO waistcoat venmo quinoa franzen, retro raclette glossier street art bushwick. Seitan salvia franzen air plant drinking vinegar vegan la croix viral. Four loko banjo sartorial kogi. Food truck cold-pressed asymmetrical adaptogen single-origin coffee, trust fund polaroid hammock pork belly. Keytar mustache DIY enamel pin synth unicorn non la croix deep v. Deserunt pop-up quis, dreamcatcher bespoke ugh gluten-free master cleanse in schlitz.'
+const content = `Once Pueblos, como su nombre lo indica, es una región  de Michoacán conocida como ¨la cañada de los once pueblos¨ denominada en el idioma de los nativos como ERAXAMAN, localizada en la Meseta Purepecha donde destaca por su exquisita gastronomía siempre  rodeada de mujeres que nacieron con el fogón en su casa y la marca del metate en su mano.
+Nuestra cocina va dirigida a   la difusión gastronómica de esta región y la elegancia de nuestro México.
+Ubicado en una zona completamente fuera de estrés, con deleite visual y emocional para nuestros comensales, con el cobijo de la atención cálida del personal de servicio que nos caracteriza a comparación de otros países.
+Uno de los principales objetivos es mostrar el rostro y el corazón del México moderno con sus raíces culinarias   poco conocidas para el extranjero y las personas que habitan en esta frontera.`
 
-const title = 'About us'
+const title = 'Once Pueblos'
 
 const url = '/static/nosotros-image.jpg'
 

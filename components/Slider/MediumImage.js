@@ -10,8 +10,10 @@ export default class MediumImage extends Component {
     var type = this.props.type
     if (type === 'left-medium') {
       var right = '33.4%'
+      var left = 0
     } else {
       right = 0
+      left = '33.3%'
     }
     return (
       <Delay wait={delay}>
@@ -24,7 +26,7 @@ export default class MediumImage extends Component {
             opacity: 0
           }}
           >
-          <div className='wrapper' style={{zIndex: zIndex, marginRight: right}}>
+          <div className='wrapper' style={{zIndex: zIndex, marginRight: right, marginLeft: left}}>
             <div className='img-container' >
               <img className='img' src={url} alt='Medium Image' />
             </div>

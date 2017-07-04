@@ -4,7 +4,7 @@ import Nav from '../Nav'
 import Divider from 'react-md/lib/Dividers'
 import Social from '../Social'
 import {Visible} from 'react-grid-system'
-import MobileNav from '../Nav/mobileNav'
+import MobileNav from '../Nav/MobileNav'
 
 const App = (props) => (
   <div>
@@ -69,10 +69,12 @@ const App = (props) => (
       <Visible md lg xl>
         <Nav />
       </Visible>
-      <div className='divider'>
-        <Divider />
-        <Social />
-      </div>
+      <Visible md lg xl>
+        <div className='divider'>
+          <Divider style={{border: 0, borderTop: '1px solid #cccccc'}} />
+        </div>
+      </Visible>
+      <Social />
       <style jsx>
         {`
           .content {
@@ -82,15 +84,10 @@ const App = (props) => (
             width: 100%;
           }
           .divider {
-            width: 50%;
+            width: 25%;
             margin: auto;
-            padding-top: 30px;
+            padding-top: 14px;
             position: relative;
-          }
-          @media screen and (max-width: 450px) and (min-width: 250px) {
-              .divider {
-                  width: 70%;
-              }
           }
           .page {
             height: 100%;

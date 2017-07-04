@@ -53,6 +53,9 @@ export default class Nav extends Component {
               padding-left: 10px;
               transition: font-size .1s ease-in-out;
             }
+            .content a:hover {
+              color: #5e5e5e;
+            }
             @media screen and (max-width: 768px) and (min-width: 300px) {
                 .content li {
                     display: block
