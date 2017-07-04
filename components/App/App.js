@@ -4,7 +4,7 @@ import Nav from '../Nav'
 import Divider from 'react-md/lib/Dividers'
 import Social from '../Social'
 import {Visible} from 'react-grid-system'
-//  import mobileNav from '../Nav/mobileNav'
+import MobileNav from '../Nav/MobileNav'
 
 const App = (props) => (
   <div>
@@ -61,7 +61,7 @@ const App = (props) => (
     <div className='page'>
       <Logo />
       <Visible xs sm>
-        <Nav />
+        <MobileNav />
       </Visible>
       <div className='content'>
         {props.children}

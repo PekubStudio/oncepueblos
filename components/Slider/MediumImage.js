@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Transition from 'react-motion-ui-pack'
 import {spring} from 'react-motion'
 import Delay from 'react-delay'
-import { Row, Col } from 'react-grid-system'
-
 export default class MediumImage extends Component {
   render () {
     var zIndex = this.props.zindex
@@ -27,13 +25,9 @@ export default class MediumImage extends Component {
           }}
           >
           <div className='wrapper' style={{zIndex: zIndex, marginRight: right}}>
-            <Row>
-              <Col xs={12} sm={12} md={12} lg={12}>
-                <div className='img-container' >
-                  <img className='img' src={url} alt='Medium Image' />
-                </div>
-              </Col>
-            </Row>
+            <div className='img-container' >
+              <img className='img' src={url} alt='Medium Image' />
+            </div>
             <style jsx>
               {`
                 .img-container {

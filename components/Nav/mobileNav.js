@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-export default class mobileNav extends Component {
+export default class MobileNav extends Component {
   render () {
     const menu = [
       'Nosotros',
@@ -46,7 +46,8 @@ export default class mobileNav extends Component {
               padding-right: 10px;
               padding-left: 10px;
               transition: font-size .1s ease-in-out;
-              display: block
+              display: block;
+              line-height: 32px;
             }
         `}</style>
       </div>
