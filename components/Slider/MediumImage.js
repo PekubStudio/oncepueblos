@@ -11,7 +11,7 @@ export default class MediumImage extends Component {
     if (type === 'left-medium') {
       var right = '33.4%'
     } else {
-      right = '0%'
+      right = 0
     }
     return (
       <Delay wait={delay}>

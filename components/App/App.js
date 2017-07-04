@@ -66,7 +66,7 @@ const App = (props) => (
       <div className='content'>
         {props.children}
       </div>
-      <Visible md lg>
+      <Visible md lg xl>
         <Nav />
       </Visible>
       <div className='divider'>

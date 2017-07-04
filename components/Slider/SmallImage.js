@@ -8,7 +8,7 @@ export default class SmallImage extends Component {
     var url = this.props.url
     var delay = this.props.delay
     var type = this.props.type
-    if (type === 'left-medium') {
+    if (type === 'left-small') {
       var left = 0
     } else {
       left = '66.6%'

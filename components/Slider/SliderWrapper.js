@@ -8,9 +8,9 @@ export default class SliderWrapper extends Component {
   main (url, type, zIndex, counter, time) {
     if (type[counter] === 'full') {
       return (<FullImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
-    } else if (type[counter] === 'right-small') {
+    } else if (type[counter] === 'right-small' || type[counter] === 'left-small') {
       return (<SmallImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
-    } else if (type[counter] === 'left-medium') {
+    } else if (type[counter] === 'left-medium' || type[counter] === 'right-medium') {
       return (<MediumImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
     }
   }
