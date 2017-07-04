@@ -4,15 +4,17 @@ import Link from 'next/link'
 export default class Nav extends Component {
   render () {
     const menu = [
-      'Nosotros',
-      '|',
-      'Menu & Historias',
-      '|',
-      'Vino',
-      '|',
-      'Eventos',
-      '|',
-      'Contacto'
+      {title: 'Inicio', url: '/'},
+      {title: '|', url: '#'},
+      {title: 'Nosotros', url: '/about-us'},
+      {title: '|', url: '#'},
+      {title: 'MENÚ & HISTORIAS', url: '/menu'},
+      {title: '|', url: '#'},
+      {title: 'COCINA ', url: '/kitchen'},
+      {title: '|', url: '#'},
+      {title: 'CHEF ', url: '/chef'},
+      {title: '|', url: '#'},
+      {title: 'CONTACTO', url: '/contact-us'}
     ]
 
     let key = 0
@@ -21,7 +23,7 @@ export default class Nav extends Component {
         <ul>
           {
             menu.map((item) => (
-              <li key={key++}><Link href='/about-us'><a>{item.toUpperCase()}</a></Link></li>
+              <li key={key++}><Link href={item.url}><a>{item.title.toUpperCase()}</a></Link></li>
             ))
           }
         </ul>
