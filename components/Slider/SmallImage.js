@@ -9,9 +9,9 @@ export default class SmallImage extends Component {
     var delay = this.props.delay
     var type = this.props.type
     if (type === 'left-small') {
-      var right = '66.6%'
+      var left = 0
     } else {
-      right = 0
+      left = '66.6%'
     }
     return (
       <Delay wait={delay}>
@@ -24,7 +24,7 @@ export default class SmallImage extends Component {
             opacity: 0
           }}
           >
-          <div className='wrapper' style={{zIndex: zIndex, marginRight: right}}>
+          <div className='wrapper' style={{zIndex: zIndex, left: left}}>
             <div className='img-container' >
               <img className='img' src={url} alt='Small Image' />
             </div>
@@ -46,7 +46,6 @@ export default class SmallImage extends Component {
                   max-width: 875px;
                   top: 0;
                   right: 0;
-
                 }
               `}
             </style>
