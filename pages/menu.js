@@ -5,7 +5,7 @@ const content = 'Occupy offal neutra, fanny pack ethical aute twee magna austin 
 
 const title = 'Menu'
 
-const url = '/static/kitchen-image.jpg'
+const url = '/static/historias-image.jpg'
 
 export default () => (
   <App>
