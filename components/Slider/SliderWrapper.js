@@ -20,7 +20,7 @@ export default class SliderWrapper extends Component {
       '/static/lg/lgTwo.jpg',
       '/static/lg/lgThree.jpg',
       '/static/lg/lgFour.jpg',
-      '/static/lg/lgFive.jpg',
+      '/static/lg/lgFive.jpg'
     ]
     var type = ['full', 'full', 'full', 'full', 'full']
     var zIndex = [0, 1, 2, 3, 4, 5]
