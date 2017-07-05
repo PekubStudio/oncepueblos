@@ -17,15 +17,14 @@ export default class SliderWrapper extends Component {
   render () {
     var url = [
       '/static/lg/lgOne.jpg',
-      '/static/small/smallOne.jpg',
-      '/static/md/mdOne.jpg',
       '/static/lg/lgTwo.jpg',
-      '/static/md/mdTwo.jpg',
-      '/static/small/smallTwo.jpg'
+      '/static/lg/lgThree.jpg',
+      '/static/lg/lgFour.jpg',
+      '/static/lg/lgFive.jpg',
     ]
-    var type = ['full', 'right-small', 'left-medium', 'full', 'left-medium', 'right-small']
+    var type = ['full', 'full', 'full', 'full', 'full']
     var zIndex = [0, 1, 2, 3, 4, 5]
-    var time = [0, 3500, 5500, 7500, 9500, 11500]
+    var time = [0, 2500, 5000, 7500, 10000, 12500]
     return (
       <div className='main-wrapper' id='prueba'>
         {
