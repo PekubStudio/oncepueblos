@@ -1,18 +1,33 @@
-import { Row, Col } from 'react-grid-system'
+import { Row, Col, Visible } from 'react-grid-system'
 
 const Info = ({ title, content, imgUrl }) => (
   <div className='info'>
     <Row className='row'style={{marginLeft: 'auto', marginRight: 'auto', display: 'block'}}>
-      <Col md={5} lg={4} style={{marginLeft: 40}}>
-        <div className='paragraph' id='scroll'>
-          <h2>{title}</h2>
-          {content}
-        </div>
+      <Col xs={12} sm={12} md={4} lg={4} xl={4} style={{paddingLeft: 0 , paddingRight: 0}}>
+        <Visible md lg xl>
+          <div className='paragraph' id='scroll'>
+            <h2>{title}</h2>
+            {content}
+          </div>
+        </Visible>
+        <Visible xs sm>
+          <div className='img-containerMobile'>
+            <img src={imgUrl} />
+          </div>
+        </Visible>
       </Col>
-      <Col md={7} lg={8}>
-        <div className='img-container'>
-          <img src={imgUrl} />
-        </div>
+      <Col xs={12} sm={12} md={8} lg={8} xl={8} style={{paddingRight: 0}}>
+        <Visible md lg xl>
+          <div className='img-container'>
+            <img src={imgUrl} />
+          </div>
+        </Visible>
+        <Visible xs sm>
+          <div className='paragraph-mobile'>
+            <h2>{title}</h2>
+            {content}
+          </div>
+        </Visible>
       </Col>
     </Row>
     <style jsx>
@@ -37,6 +52,13 @@ const Info = ({ title, content, imgUrl }) => (
           margin-right: auto;
           display: block
         }
+        .img-containerMobile {
+          max-width: 568px;
+          height: 388px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block
+        }
         img {
           width: 100%;
           height: 100%;
@@ -46,11 +68,21 @@ const Info = ({ title, content, imgUrl }) => (
                 margin-top: 30px;
                 height: auto;
             }
+            .img-containerMobile {
+              height: auto;
+              margin-bottom: 25px;
+            }
+        }
+        @media screen and (max-width: 876px) {
+            .img-container {
+                height: auto;
+            }
         }
         .paragraph {
           height: 404px;
           overflow-y: scroll;
-          padding-right:10px;
+          padding-left: 15px;
+          padding-right: 15px;
           color: #636363;
           font-size: 14px;
           line-height: 1.65em;
@@ -58,6 +90,18 @@ const Info = ({ title, content, imgUrl }) => (
           max-height: 388px;
           font-family: Lato;
         }
+        .paragraph-mobile {
+          height: 100%;
+          overflow-y: hidden;
+          overflow-x: hidden;
+          color: #636363;
+          font-size: 14px;
+          line-height: 1.65em;
+          font-family: Lato;
+          letter-spacing: .6px;
+          padding-right: 20px;
+        }
+
         #scroll::-webkit-scrollbar {
           width: 2px;
         }

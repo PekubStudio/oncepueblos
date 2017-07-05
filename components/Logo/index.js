@@ -10,7 +10,8 @@ export default () => (
             display: block;
             background-position: center;
             background-repeat: no-repeat;
-            margin: 20px auto;
+            margin-left: auto;
+            margin-right: auto;
             height: 110px;
           }
         `}

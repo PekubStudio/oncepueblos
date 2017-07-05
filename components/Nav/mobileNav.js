@@ -50,6 +50,9 @@ export default class MobileNav extends Component {
               display: block;
               line-height: 32px;
             }
+            .content a:active {
+              color: #5e5e5e;
+            }
         `}</style>
       </div>
     )

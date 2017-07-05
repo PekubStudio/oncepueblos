@@ -53,6 +53,7 @@ export default class Nav extends Component {
               padding-right: 10px;
               padding-left: 10px;
               transition: font-size .1s ease-in-out;
+              letter-spacing: 1px;
             }
             .content a:hover {
               color: #5e5e5e;
