@@ -13,7 +13,7 @@ const App = (props) => (
       <title>Once Pueblos</title>
       <link rel='apple-touch-startup-image' href='/static/icon-512x512.png' />
       <link rel='apple-touch-icon' href='/static/icon-384x384' />
-      <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon" />
+      <link rel='shortcut icon' href='/static/favicon.png' type='image/x-icon' />
       <meta name='apple-mobile-web-app-title' content='HCB' />
       <meta name='apple-mobile-web-app-capable' content='yes' />
       <meta name='apple-mobile-web-app-status-bar-style' content='blue' />

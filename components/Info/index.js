@@ -3,7 +3,7 @@ import { Row, Col, Visible } from 'react-grid-system'
 const Info = ({ title, content, imgUrl }) => (
   <div className='info'>
     <Row className='row'style={{marginLeft: 'auto', marginRight: 'auto', display: 'block'}}>
-      <Col xs={12} sm={12} md={4} lg={4} xl={4} style={{paddingLeft: 0 , paddingRight: 0}}>
+      <Col xs={12} sm={12} md={4} lg={4} xl={4} style={{paddingLeft: 0, paddingRight: 0}}>
         <Visible md lg xl>
           <div className='paragraph' id='scroll'>
             <h2>{title}</h2>
