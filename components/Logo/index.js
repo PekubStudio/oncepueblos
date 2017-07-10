@@ -1,18 +1,17 @@
 export default () => (
   <a href='/'>
     <div className='logo-banner'>
+      <img alt='logo-oncepueblos' src='/static/logo-once-pueblos.png' width='173' height='62' className='img-logo' />
       <style>
         {`
-          .logo-banner
-          {
-            background-image: url(/static/logo-once-pueblos.png);
-            width: 260px;
-            display: block;
-            background-position: center;
-            background-repeat: no-repeat;
+          .img-logo {
             margin-left: auto;
             margin-right: auto;
-            height: 110px;
+            display: block;
+            margin-top: 25px;
+          }
+          .logo-banner {
+            height: 95px;
           }
         `}
       </style>

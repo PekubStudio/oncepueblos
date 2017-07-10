@@ -1,9 +1,9 @@
 import App from '../components/App/App'
 import Info from '../components/Info'
 
-const content = 'Occupy offal neutra, fanny pack ethical aute twee magna austin in copper mug. Woke yr cillum unicorn dolore organic esse pop-up vinyl scenester disrupt cred echo park dolor. Hot chicken next level deep v af. Deserunt cloud bread et, pop-up vaporware eu sartorial palo santo vape keytar chicharrones hell of tote bag tumblr aute. Gentrify plaid vinyl pour-over, nisi jean shorts before they sold out scenester kitsch everyday carry swag sriracha in. YOLO waistcoat venmo quinoa franzen, retro raclette glossier street art bushwick. Seitan salvia franzen air plant drinking vinegar vegan la croix viral. Four loko banjo sartorial kogi. Food truck cold-pressed asymmetrical adaptogen single-origin coffee, trust fund polaroid hammock pork belly. Keytar mustache DIY enamel pin synth unicorn non la croix deep v. Deserunt pop-up quis, dreamcatcher bespoke ugh gluten-free master cleanse in schlitz.'
+const content = '"Influenciado por la cocina Michoacana, nuestro menú celebra la variedad de ingredientes de la Baja adaptándose a las diferentes temporadas del año, siempre ofreciendo sorpresas a nuestros visitantes.'
 
-const title = 'Menu'
+const title = 'Menú'
 
 const url = '/static/historias-image.jpg'
 
