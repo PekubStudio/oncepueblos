@@ -28,9 +28,9 @@ export default class SliderWrapper extends Component {
     return (
       <div className='main-wrapper' id='prueba'>
         {
-          zIndex.map((counter) => (
-            this.main(url, type, zIndex, counter, time)
-          ))
+           zIndex.map((counter) => (
+             this.main(url, type, zIndex, counter, time)
+           ))
         }
         <style jsx>
           {`

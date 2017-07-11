@@ -50,6 +50,7 @@ const App = (props) => (
           margin: 0;
           padding: 0;
           box-sizing: border-box;
+          padding-bottom: 25px;
         }
         #__next {
           height: 100%;
