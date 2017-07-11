@@ -6,7 +6,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import axios from 'axios'
 
 export default class ContactForm extends Component {
-  handleEmail() {
+  handleEmail () {
     console.log(this.refs.name.getValue())
     console.log()
     console.log(this.refs.phone.getValue())
@@ -139,5 +139,4 @@ export default class ContactForm extends Component {
       </div>
     )
   }
-
 }
