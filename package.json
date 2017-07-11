@@ -4,7 +4,7 @@
   "description": "Sitio web gastronomico",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "npm run lint && next",
     "build": "npm run lint && next build",
     "start": "next start",
     "lint": "standard",
