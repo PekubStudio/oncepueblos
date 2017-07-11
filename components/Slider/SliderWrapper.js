@@ -2,34 +2,38 @@ import React, { Component } from 'react'
 import FullImage from './FullImage'
 import SmallImage from './SmallImage'
 import MediumImage from './MediumImage'
-// import Delay from 'react-delay'
 
 export default class SliderWrapper extends Component {
-  main (url, type, zIndex, counter, time) {
-    if (type[counter] === 'full') {
-      return (<FullImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
-    } else if (type[counter] === 'right-small' || type[counter] === 'left-small') {
-      return (<SmallImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
-    } else if (type[counter] === 'left-medium' || type[counter] === 'right-medium') {
-      return (<MediumImage url={url[counter]} zIndex={zIndex[counter]} delay={time[counter]} type={type[counter]} />)
+  main (image) {
+    if (image.type === 'full') {
+      return (<FullImage url={image.url} zIndex={image.id} delay={image.time} type={image.type} />)
+    } else if (image.type === 'right-small' || image.type === 'left-small') {
+      return (<SmallImage url={image.url} zIndex={image.id} delay={image.time} type={image.type} />)
+    } else if (image.type === 'left-medium' || image.type === 'right-medium') {
+      return (<MediumImage url={image.url} zIndex={image.id} delay={image.time} type={image.type} />)
     }
   }
+
+  getDelay (id) {
+    let step = 2500
+    let time = step * id
+    return (time)
+  }
+
   render () {
-    var url = [
-      '/static/lg/lgOne.jpg',
-      '/static/lg/lgTwo.jpg',
-      '/static/lg/lgThree.jpg',
-      '/static/lg/lgFour.jpg',
-      '/static/lg/lgFive.jpg'
+    let id = 0
+    var imagenes = [
+      { url: '/static/lg/lgOne.jpg', id: id, time: this.getDelay(id), type: 'full' },
+      { url: '/static/lg/lgTwo.jpg', id: ++id, time: this.getDelay(id), type: 'full' },
+      { url: '/static/lg/lgThree.jpg', id: ++id, time: this.getDelay(id), type: 'full' },
+      { url: '/static/lg/lgFour.jpg', id: ++id, time: this.getDelay(id), type: 'full' },
+      { url: '/static/lg/lgFive.jpg', id: ++id, time: this.getDelay(id), type: 'full' }
     ]
-    var type = ['full', 'full', 'full', 'full', 'full']
-    var zIndex = [0, 1, 2, 3, 4, 5]
-    var time = [0, 2500, 5000, 7500, 10000, 12500]
     return (
-      <div className='main-wrapper' id='prueba'>
+      <div className='main-wrapper' >
         {
-           zIndex.map((counter) => (
-             this.main(url, type, zIndex, counter, time)
+           imagenes.map((image) => (
+             this.main(image)
            ))
         }
         <style jsx>
