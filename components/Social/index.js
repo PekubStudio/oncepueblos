@@ -6,10 +6,10 @@ import FaTwitter from 'react-icons/lib/fa/twitter'
 export default () => (
   <div>
     <ul className='content'>
-      <li><FaFacebook /></li>
-      <li><FaYoutubePlay /></li>
-      <li><FaInstagram /></li>
-      <li><FaTwitter /></li>
+      <a href='#'><li><FaFacebook /></li></a>
+      <a href='#'><li><FaYoutubePlay /></li></a>
+      <a href='#'><li><FaInstagram /></li></a>
+      <a href='#'><li><FaTwitter /></li></a>
     </ul>
     <style jsx>{`
         .content {
@@ -24,11 +24,15 @@ export default () => (
         }
 
         .content li {
+          color: black;
           list-style: none;
           font-size: larger;
           display: inline-block;
           padding-right: 20px;
           padding-left: 20px;
+        }
+        .content li:hover {
+          color: #5e5e5e;
         }`}</style>
   </div>
 )
