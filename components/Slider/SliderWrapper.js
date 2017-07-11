@@ -20,8 +20,25 @@ export default class SliderWrapper extends Component {
     return (time)
   }
 
+  loop (array, i) {
+    console.log(array[i])
+    let _self = this
+    if (i < array.length) {
+      setTimeout(function () {
+        i++
+        return _self.loop(array, i)
+      }, 5000)
+    }
+    if (i === array.length - 1) {
+      setTimeout(function () {
+        return _self.loop(array, 0)
+      }, 5000)
+    }
+  }
+
   render () {
     let id = 0
+    let i = 0
     var imagenes = [
       { url: '/static/lg/lgOne.jpg', id: id, time: this.getDelay(id), type: 'full' },
       { url: '/static/lg/lgTwo.jpg', id: ++id, time: this.getDelay(id), type: 'full' },
@@ -29,6 +46,7 @@ export default class SliderWrapper extends Component {
       { url: '/static/lg/lgFour.jpg', id: ++id, time: this.getDelay(id), type: 'full' },
       { url: '/static/lg/lgFive.jpg', id: ++id, time: this.getDelay(id), type: 'full' }
     ]
+    this.loop(imagenes, i)
     return (
       <div className='main-wrapper' >
         {
