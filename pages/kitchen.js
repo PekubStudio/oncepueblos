@@ -1,3 +1,4 @@
+import React from 'react'
 import App from '../components/App/App'
 import Info from '../components/Info'
 import en from '../components/translate/en-US'
@@ -9,7 +10,7 @@ export default class extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      language: [],
+      language: []
     }
   }
   componentDidMount () {
