@@ -5,6 +5,7 @@ import Divider from 'react-md/lib/Dividers'
 import Social from '../Social'
 import {Visible} from 'react-grid-system'
 import MobileNav from '../Nav/mobileNav'
+import TranslaterButton from '../translaterButton'
 
 const App = (props) => (
   <div>
@@ -75,6 +76,7 @@ const App = (props) => (
         </div>
       </Visible>
       <Social />
+      <TranslaterButton />
       <style jsx>
         {`
           .content {
