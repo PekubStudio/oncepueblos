@@ -5,7 +5,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 const bodyParser = require('body-parser')
-
+const smtpTransport = require('nodemailer-smtp-transport')
 const nodemailer = require('nodemailer')
 
 app.prepare().then(() => {
@@ -13,13 +13,13 @@ app.prepare().then(() => {
   server.use(bodyParser.json())
   server.post('/test', (req, res) => {
     const { name, email, phone, message } = req.body
-    let transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport(smtpTransport({
       service: 'Gmail',
       auth: {
         user: 'saulpolo95@gmail.com', // Your email id
         pass: 'poloboy1' // Your password
       }
-    })
+    }))
     var mailOptions = {
       from: 'saulpolo95@gmail.com', // sender address
       to: 'saulpolo95@gmail.com', // list of receivers
