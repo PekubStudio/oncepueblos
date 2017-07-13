@@ -15,14 +15,12 @@ export default () => (
         .content {
           margin-top: 20px;
           text-align: center;
-          padding-bottom: 60px;
           -webkit-padding-start: 0px;
+          -moz-padding-start: 0;
         }
-
         .content ul {
           display: block;
         }
-
         .content li {
           color: black;
           list-style: none;

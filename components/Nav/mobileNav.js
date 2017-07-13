@@ -33,6 +33,7 @@ export default class MobileNav extends Component {
             .content ul {
               display: block;
               -webkit-padding-start: 0;
+              -moz-padding-start: 0;
             }
 
             .content a {
