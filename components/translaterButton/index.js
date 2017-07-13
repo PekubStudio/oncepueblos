@@ -14,19 +14,22 @@ export default class TranslaterButton extends Component {
   }
 
   componentDidMount () {
-    if (window.localStorage.locale === 'es') {
-      //  const lan = require('../components/translate/es')
-      this.setState({
-        locale: 'es',
-        value: 1
-      })
-    }
-    if (window.localStorage.locale === 'en') {
-      //  const lan = require('../components/translate/en-US')
-      this.setState({
-        locale: 'en',
-        value: 2
-      })
+    switch (window.localStorage.locale) {
+      case 'es':
+        this.setState({
+          locale: 'es',
+          value: 1
+        })
+        break
+      case 'en':
+        this.setState({
+          locale: 'en',
+          value: 2
+        })
+        break
+      default:
+        window.localStorage.locale = 'es'
+        window.location.reload()
     }
     console.log('CMD', window.localStorage.locale)
   }
