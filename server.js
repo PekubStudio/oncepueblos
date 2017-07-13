@@ -22,7 +22,7 @@ app.prepare().then(() => {
     }))
     var mailOptions = {
       from: 'saulpolo95@gmail.com', // sender address
-      to: 'saulpolo95@gmail.com', // list of receivers
+      to: 'saulpolo95@gmail.com,luis.encinas1506@gmail.com,antonio@pekub.com', // list of receivers
       subject: `Email from ${name} -- ONCEPUEBLOS`, // Subject line
       text: `Phone: ${phone}, email: ${email} message: ${message}` //, // plaintext body
         // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
