@@ -12,7 +12,7 @@ export default class FullImage extends Component {
         <Transition
           component={false}
           enter={{
-            opacity: spring(1, {stiffness: 150, damping: 50})
+            opacity: spring(1, {stiffness: 50, damping: 20})
           }}
           leave={{
             opacity: 0

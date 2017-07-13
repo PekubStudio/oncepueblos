@@ -53,6 +53,9 @@ const App = (props) => (
           box-sizing: border-box;
           padding-bottom: 25px;
         }
+        button {
+          background-color: inherit !important;
+        }
         #__next {
           height: 100%;
         }
