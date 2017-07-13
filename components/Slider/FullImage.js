@@ -7,6 +7,7 @@ export default class FullImage extends Component {
     var zIndex = this.props.zindex
     var url = this.props.url
     var delay = this.props.delay
+    let id = 0
     return (
       <Delay wait={delay}>
         <Transition
@@ -18,7 +19,7 @@ export default class FullImage extends Component {
             opacity: 0
           }}
           >
-          <div className='wrapper' style={{zIndex: zIndex}}>
+          <div className='wrapper' style={{zIndex: zIndex}} key={id++}>
             <div className='img-container' >
               <img className='img' src={url} alt='Full Image' />
             </div>

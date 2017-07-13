@@ -10,5 +10,6 @@ module.exports = {
   'navMenu': 'MENÚ & HISTORIAS',
   'navCocina': 'COCINA',
   'navChef': 'CHEF',
-  'navContacto': 'CONTACTO'
+  'navContacto': 'CONTACTO',
+  'menuTitulo': 'MENÚ'
 }

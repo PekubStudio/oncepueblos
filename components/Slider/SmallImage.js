@@ -8,6 +8,7 @@ export default class SmallImage extends Component {
     var url = this.props.url
     var delay = this.props.delay
     var type = this.props.type
+    let id = 0
     if (type === 'left-small') {
       var right = '66.6%'
       var left = 0
@@ -20,13 +21,13 @@ export default class SmallImage extends Component {
         <Transition
           component={false}
           enter={{
-            opacity: spring(1, {stiffness: 150, damping: 50})
+            opacity: spring(1, {stiffness: 50, damping: 20})
           }}
           leave={{
             opacity: 0
           }}
           >
-          <div className='wrapper' style={{zIndex: zIndex, left: left, right: right}}>
+          <div className='wrapper' style={{zIndex: zIndex, left: left, right: right}} key={id++}>
             <div className='img-container' >
               <img className='img' src={url} alt='Small Image' />
             </div>

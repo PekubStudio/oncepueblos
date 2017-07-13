@@ -47,7 +47,9 @@ export default class SliderWrapper extends Component {
       <div className='main-wrapper' >
         {
            imagenes.map((image) => (
-             this.main(image)
+             <div key={image.id}>
+               {this.main(image)}
+             </div>
            ))
         }
         <style jsx>

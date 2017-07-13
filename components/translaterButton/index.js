@@ -1,15 +1,11 @@
 import React, {Component} from 'react'
-import DropDownMenu from 'material-ui/DropDownMenu'
-import MenuItem from 'material-ui/MenuItem'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
 export default class TranslaterButton extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      language: [],
-      value: 1
+      language: []
     }
   }
 
@@ -17,14 +13,12 @@ export default class TranslaterButton extends Component {
     switch (window.localStorage.locale) {
       case 'es':
         this.setState({
-          locale: 'es',
-          value: 1
+          locale: 'es'
         })
         break
       case 'en':
         this.setState({
-          locale: 'en',
-          value: 2
+          locale: 'en'
         })
         break
       default:
@@ -51,27 +45,34 @@ export default class TranslaterButton extends Component {
     }
   }
 
-  handleChange (event, index, value) {
-    this.setState({value})
-    if (value === 1) {
-      this.changeLanguage('es')
-    }
-    if (value === 2) {
-      this.changeLanguage('en')
-    }
-  }
-
   render () {
     return (
       <div className='translator'>
-        <MuiThemeProvider>
-          <div>
-            <DropDownMenu value={this.state.value} onChange={this.handleChange.bind(this)}>
-              <MenuItem value={1} primaryText='Espanol' />
-              <MenuItem value={2} primaryText='English' />
-            </DropDownMenu>
-          </div>
-        </MuiThemeProvider>
+        <span onClick={this.changeLanguage.bind(this, 'es')}>Español</span>
+        <span>/</span>
+        <span onClick={this.changeLanguage.bind(this, 'en')}>English</span>
+        <style jsx>
+          {`
+            span {
+              letter-spacing: 2px;
+              font-size: 11px;
+              color: black;
+              font-family: Lustria;
+              margin-left: 15px;
+              margin-right: 15px;
+              cursor: pointer;
+              text-transform: uppercase;
+            }
+            span:hover {
+              color: #5e5e5e;
+            }
+            .translator {
+              text-align: center;
+              margin-top: 25px;
+              margin-bottom: 30px;
+            }
+          `}
+        </style>
       </div>
     )
   }

@@ -1,14 +1,36 @@
 import App from '../components/App/App'
 import Info from '../components/Info'
-
-const content = 'Influenciado por la cocina Michoacana, nuestro menú celebra la variedad de ingredientes de la Baja adaptándose a las diferentes temporadas del año, siempre ofreciendo sorpresas a nuestros visitantes.'
-
-const title = 'Menú'
+import en from '../components/translate/en-US'
+import es from '../components/translate/es'
+import React from 'react'
 
 const url = '/static/historias-image.jpg'
 
-export default () => (
-  <App>
-    <Info title={title} content={content} imgUrl={url} />
-  </App>
-)
+export default class extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      language: []
+    }
+  }
+  componentDidMount () {
+    if (window.localStorage.locale === 'es') {
+      this.setState({
+        language: es
+      })
+    }
+    if (window.localStorage.locale === 'en') {
+      this.setState({
+        language: en
+      })
+    }
+  }
+
+  render () {
+    return (
+      <App>
+        <Info title={this.state.language.menuTitulo} content={this.state.language.menu} imgUrl={url} />
+      </App>
+    )
+  }
+}

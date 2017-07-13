@@ -1,15 +1,36 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
+import en from '../translate/en-US'
+import es from '../translate/es'
 
 export default class MobileNav extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      language: []
+    }
+  }
+  componentDidMount () {
+    if (window.localStorage.locale === 'es') {
+      this.setState({
+        language: es
+      })
+    }
+    if (window.localStorage.locale === 'en') {
+      this.setState({
+        language: en
+      })
+    }
+  }
+
   render () {
     const menu = [
-      {title: 'Inicio', url: '/'},
-      {title: 'Nosotros', url: '/about-us'},
-      {title: 'MENÚ & HISTORIAS', url: '/menu'},
-      {title: 'COCINA ', url: '/kitchen'},
-      {title: 'CHEF ', url: '/chef'},
-      {title: 'CONTACTO', url: '/contact-us'}
+      {title: this.state.language.navInicio, url: '/'},
+      {title: this.state.language.navNosotros, url: '/about-us'},
+      {title: this.state.language.navMenu, url: '/menu'},
+      {title: this.state.language.navCocina, url: '/kitchen'},
+      {title: this.state.language.navChef, url: '/chef'},
+      {title: this.state.language.navContacto, url: '/contact-us'}
     ]
 
     let key = 0
@@ -18,7 +39,7 @@ export default class MobileNav extends Component {
         <ul>
           {
             menu.map((item) => (
-              <li key={key++}><Link href={item.url}><a>{item.title.toUpperCase()}</a></Link></li>
+              <li key={key++}><Link href={item.url}><a>{item.title}</a></Link></li>
             ))
           }
         </ul>
