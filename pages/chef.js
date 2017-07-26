@@ -1,12 +1,10 @@
 import React from 'react'
 import App from '../components/App/App'
-import Info from '../components/Info'
+import InfoChef from '../components/Info/InfoChef'
 import en from '../components/translate/en-US'
 import es from '../components/translate/es'
 
 const title = 'Chef'
-
-const url = '/static/chef.jpg'
 
 export default class extends React.Component {
   constructor (props) {
@@ -31,7 +29,7 @@ export default class extends React.Component {
   render () {
     return (
       <App>
-        <Info title={title} content={this.state.language.chef} imgUrl={url} />
+        <InfoChef title={title} content={this.state.language.chef} />
       </App>
     )
   }

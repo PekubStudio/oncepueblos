@@ -9,12 +9,17 @@ export default class MediumImage extends Component {
     var delay = this.props.delay
     var type = this.props.type
     let id = 0
+    var left
+    var right
     if (type === 'left-medium') {
-      var right = '33.4%'
-      var left = 0
-    } else {
+      right = '33.4%'
+      left = 0
+    } else if (type === 'right-medium') {
       right = 0
       left = '33.3%'
+    } else {
+      right = 0
+      left = 0
     }
     return (
       <Delay wait={delay}>
@@ -36,13 +41,14 @@ export default class MediumImage extends Component {
                 .img-container {
                   height: 100%;
                   max-height: 388px;
-                  max-width: 583px;
+                  max-width: 568px;
                   display: block;
                   width: 100%;
                 }
                 .img {
                   width: 100%;
                   height: auto;
+                  max-height: 388px;
                 }
                 .wrapper {
                   position: absolute
