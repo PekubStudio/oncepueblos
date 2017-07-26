@@ -4,8 +4,29 @@ import TextField from 'material-ui/TextField'
 import {Col, Row} from 'react-grid-system'
 import RaisedButton from 'material-ui/RaisedButton'
 import axios from 'axios'
+import en from '../translate/en-US'
+import es from '../translate/es'
 
 export default class ContactForm extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      language: []
+    }
+  }
+  componentDidMount () {
+    if (window.localStorage.locale === 'es') {
+      this.setState({
+        language: es
+      })
+    }
+    if (window.localStorage.locale === 'en') {
+      this.setState({
+        language: en
+      })
+    }
+  }
+
   handleEmail () {
     console.log(this.refs.name.getValue())
     console.log()
@@ -33,25 +54,25 @@ export default class ContactForm extends Component {
             <MuiThemeProvider>
               <div className='form-wrapper'>
                 <div className='text-container'>
-                  <h2 className='text'>Contáctanos</h2>
+                  <h2 className='text'>{this.state.language.contacto}</h2>
                 </div>
                 <TextField
-                  hintText={<span className='label'>Nombre</span>}
+                  hintText={<span className='label'>{this.state.language.contactNombre}</span>}
                   fullWidth
                   ref='name'
                 /><br />
                 <TextField
-                  hintText={<span className='label'>Correo</span>}
+                  hintText={<span className='label'>{this.state.language.contactoCorreo}</span>}
                   fullWidth
                   ref='email'
                 /><br />
                 <TextField
-                  hintText={<span className='label'>Telefono</span>}
+                  hintText={<span className='label'>{this.state.language.contactoTelefono}</span>}
                   fullWidth
                   ref='phone'
                 /><br />
                 <TextField
-                  hintText={<span className='label'>Mensaje</span>}
+                  hintText={<span className='label'>{this.state.language.contactoMensaje}</span>}
                   fullWidth
                   multiLine
                   rows={2}
@@ -60,7 +81,7 @@ export default class ContactForm extends Component {
                 <div className='button-form'>
                   <div className='button-container'>
                     <RaisedButton
-                      label={<span style={{color: 'white'}}>Enviar</span>}
+                      label={<span style={{color: 'white'}}>{this.state.language.contactoBoton}</span>}
                       labelPosition='before'
                       primary={false}
                       className='raised-button'

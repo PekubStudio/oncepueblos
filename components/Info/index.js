@@ -80,6 +80,7 @@ const Info = ({ title, content, imgUrl }) => (
         }
         .paragraph {
           height: 404px;
+          text-align : justify;
           overflow-y: scroll;
           padding-left: 15px;
           padding-right: 15px;
@@ -96,6 +97,7 @@ const Info = ({ title, content, imgUrl }) => (
           overflow-x: hidden;
           color: #636363;
           font-size: 14px;
+          text-align : justify;
           line-height: 1.65em;
           font-family: Lato;
           letter-spacing: .6px;

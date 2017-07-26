@@ -90,11 +90,13 @@ const InfoChef = ({ title, content, imgUrl }) => (
           letter-spacing: .6px;
           max-height: 388px;
           font-family: Lato;
+          text-align : justify;
         }
         .paragraph-mobile {
           height: 100%;
           overflow-y: hidden;
           overflow-x: hidden;
+          text-align : justify;
           color: #636363;
           font-size: 14px;
           line-height: 1.65em;

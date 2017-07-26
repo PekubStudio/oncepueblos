@@ -48,6 +48,36 @@ export default class SliderWrapper extends Component {
               max-height: 388px;
               position: relative;
             }
+            @media screen and (max-width: 500px) and (min-width: 450px) {
+                .main-wrapper {
+                    max-height: 340px;
+                }
+            }
+            @media screen and (max-width: 450px) and (min-width: 400px) {
+                .main-wrapper {
+                    max-height: 300px;
+                }
+            }
+            @media screen and (max-width: 400px) and (min-width: 350px) {
+                .main-wrapper {
+                    max-height: 300px;
+                }
+            }
+            @media screen and (max-width: 350px) and (min-width: 300px) {
+                .main-wrapper {
+                    max-height: 230px;
+                }
+            }
+            @media screen and (max-width: 300px) and (min-width: 250px) {
+                .main-wrapper {
+                    max-height: 190px;
+                }
+            }
+            @media screen and (max-width: 250px) and (min-width: 200px) {
+                .main-wrapper {
+                    max-height: 150px;
+                }
+            }
           `}
         </style>
       </div>

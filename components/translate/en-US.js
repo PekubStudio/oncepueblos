@@ -11,5 +11,11 @@ module.exports = {
   'navCocina': 'CUISINE',
   'navChef': 'CHEF',
   'navContacto': 'CONTACT',
-  'menuTitulo': 'MENU'
+  'menuTitulo': 'MENU',
+  'contacto': 'CONTACT US',
+  'contactNombre': 'Name',
+  'contactoCorreo': 'Mail',
+  'contactoTelefono': 'Phone',
+  'contactoMensaje': 'Message',
+  'contactoBoton': 'Send'
 }
